@@ -54,7 +54,7 @@ body{
   
     background-color: var(--line-border-fill);
     height: 4px;
-    width:50%;
+    width:0%;
     position: absolute;
     top: 50%;
     left: 0;
@@ -91,3 +91,15 @@ body{
     margin: 5px;
 }
 
+.button:active{
+    transform: scale(0.98); /*butona tıklanınca butonu küçültür*/
+}
+
+.button:focus{
+    outline: 0;
+
+}
+
+.button:disabled{
+    background-color: var(--line-border-empty);
+}

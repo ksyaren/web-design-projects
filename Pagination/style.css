@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-:root {
+
+:root{
     --line-border-fill: #ff8800;
     --line-border-empty: #dee2e6;
 }
 
-* {
+
+*{
     box-sizing: border-box;   
 }
 
-body {
+body{
     font-family: 'Inter', sans-serif;
-    background-color: #fbf9fa;
+    background-color:#fbf9fa;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 0px;
     overflow: hidden;
+
 }
 
-.container {
+.container{
     text-align: center;
 }
 
-.progress-container {
+.progress-container{
     display: flex;
-    justify-content: space-evenly; /* Daireler arasındaki boşluğu eşitler */
-    align-items: center; /* Dairelerin dikeyde ortalanmasını sağlar */
+    justify-content: space-between;
     position: relative;
+    margin-bottom: 30px;
     width: 350px;
     max-width: 100%;
-    margin-bottom: 30px;
 }
 
-
-.progress-container::before {
+.progress-container::before{
     content: '';
     background-color: var(--line-border-empty);
-    height: 4px;
+    height :4px;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -48,23 +49,25 @@ body {
     transition: 0.4s ease;
 }
 
+
 .progress {
+  
     background-color: var(--line-border-fill);
     height: 4px;
-    width: 0%; /* Dinamik olarak genişliği ayarlayın */
+    width:50%;
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
-    z-index: -1;
+    transform: translateY(-50);
+    z-index: -1; /*Öğeyi diğer öğelerin arkasına yerleştirir.*/
     transition: 0.4s ease;
 }
 
-.circle {
+.circle{
     background-color: #fff;
     border-radius: 50%;
     height: 30px;
-    width: 30px;
+    width:30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,11 +75,11 @@ body {
     transition: 0.4s ease;
 }
 
-.circle.active {
+.circle.active{
     border-color: var(--line-border-fill);
 }
 
-.button {
+.button{
     background-color: var(--line-border-fill);
     color: #fff;
     border: 0;
@@ -84,5 +87,7 @@ body {
     cursor: pointer;
     font-family: inherit;
     padding: 8px 24px;
+    font-size: 14px;
     margin: 5px;
 }
+

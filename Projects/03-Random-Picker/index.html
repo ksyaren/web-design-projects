@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>The Pool of Luck</title>
+    <!--Fonts has been added. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sue+Ellen+Francisco&family=Ysabeau+Office:wght@700&display=swap" rel="stylesheet">
+
+    <title>Random Picker</title> 
 </head>
 <body>
     <div class="container">
-        <h1>See Your Destiny</h1>
+        <h1>Random Choice Picker</h1>
+        <p>Enter your choices, seperated by commas:</p>
+        <textarea  id="choices" rows="3" placeholder="Choice 1, Choice 2, Choice3"></textarea>
+   
+        <button id="pickButton">Pick A Random Choice</button>
+        <p id="result"></p>
     </div>
-
-
+   
 
 
     <script src="app.js"></script>

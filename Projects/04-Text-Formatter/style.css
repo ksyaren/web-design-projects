@@ -1,0 +1,88 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+
+body{
+    text-align: center;
+    background-color: #7678ed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 6rem;
+    background-color: #3d348b;
+    position: absolute;
+    border-radius: 0.4em;
+  
+}
+
+.container h1{
+    color: beige;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.input-container input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 0.4em;
+}
+
+button{
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #7678ed;
+    color: beige;
+    border-radius: 0.4em;
+    margin : 10px;
+    border: none;
+    
+}
+
+p{
+    border: none;
+    width: 500px;
+    height: 500px;
+    background-color: #fcc22e;
+    color: black;
+    height: 70px;
+    border-radius: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+.underline{
+    text-decoration: underline;
+}
+.italic{
+font-style: italic;
+}
+.bold{
+    font-style: bold;
+}
